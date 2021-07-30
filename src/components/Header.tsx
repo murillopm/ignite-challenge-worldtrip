@@ -1,9 +1,51 @@
-import { Flex, Image } from "@chakra-ui/react";
+import { Flex, Icon, Image, Link as ChakraLink, useBreakpointValue } from "@chakra-ui/react";
+import { useRouter } from "next/dist/client/router";
+import Link from "next/link";
+import { IoIosArrowBack } from "react-icons/io"
 
 export function Header() {
-  return (
-    <Flex justify="center" align="center" w="100%" py="7" as="header">
+  const path = useRouter()
+  
+  const isMobile = useBreakpointValue({
+    base: true,
+    lg: false
+  })
+
+  if (path.asPath === '/') {
+    return (
+      <Flex 
+        justify="center" 
+        align="center" 
+        w="100%" py="7" 
+        as="header" 
+        bg="brand.white-text" 
+        maxWidth={1440}
+        mx="auto"
+      >
         <Image src="/images/logo.svg" height="12" width="44"/>
-    </Flex>
-  )
+      </Flex>
+    )
+  } else {
+    return (
+      <Flex 
+        as="header" 
+        justify="center" 
+        align="center" 
+        maxWidth={1440}
+        w="100%" 
+        mx="auto"
+        py="7" 
+        bg="brand.white-text" 
+        position="relative"
+      >
+        <Link href="/">
+          <ChakraLink left={["16px", "48px", "72px", "140px"]} position="absolute">
+            <Icon as={IoIosArrowBack} height="28px" width="28px"/>
+          </ChakraLink>
+        </Link>
+        <Image src="/images/logo.svg" height="12" width="44"/>
+      </Flex>
+    )
+  }
+  
 }

@@ -1,7 +1,6 @@
 import { Box, Divider, Flex, Text } from "@chakra-ui/react";
 
 import { Banner } from "../components/Banner";
-import { Header } from "../components/Header";
 import { SwiperCarousel } from "../components/Swiper";
 import { TravelTypes } from "../components/TravelTypes";
 
@@ -12,8 +11,8 @@ export default function Home() {
       align="center"
       maxWidth={1440}
       mt="0"
-      mb="2.5rem"
       mx="auto"
+      bg="brand.white-text"
     >
       <Banner />
       <Box mt="28" maxWidth={1160} width="100%" mx="auto" mb="20" px="3">
@@ -26,7 +25,7 @@ export default function Home() {
         Vamos nessa? <br />
         Então escolha seu continente
       </Text>
-      <Box maxWidth={1240} width="100%" mx="auto">
+      <Box maxWidth={1240} width="100%" mx="auto" mb="2.5rem">
         <SwiperCarousel />
       </Box>
     </Flex>

@@ -1,0 +1,226 @@
+{
+  "continents": [
+    {
+      "id": "europe",
+      "name": "Europa",
+      "description": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste.",
+      "bannerImgUrl": "https://source.unsplash.com/5g8dJvtYRYA",
+      "totalCountries": "50",
+      "totalLanguages": "24",
+      "popularcities": "32",
+      "mostpopularcities": [
+        {
+          "city": "Londres",
+          "country": "Reino Unido",
+          "cityImage": "https://source.unsplash.com/Q6UehpkBSnQ",
+          "countryCode": "GB"
+        },
+        {
+          "city": "Paris",
+          "country": "França",
+          "cityImage": "https://source.unsplash.com/QAwciFlS1g4",
+          "countryCode": "FR"
+        },
+        {
+          "city": "Roma",
+          "country": "Itália",
+          "cityImage": "https://source.unsplash.com/VFRTXGw1VjU",
+          "countryCode": "IT"
+        },
+        {
+          "city": "Praga",
+          "country": "República Tcheca",
+          "cityImage": "https://source.unsplash.com/aDxmYZtYj7g",
+          "countryCode": "CZ"
+        },
+        {
+          "city": "Amsterdã",
+          "country": "Holanda",
+          "cityImage": "https://source.unsplash.com/QRtym77B6xk",
+          "countryCode": "NL"
+        }
+      ]
+    },
+    {
+      "id": "asia",
+      "name": "Ásia",
+      "description": "A Ásia é o maior dos continentes, tanto em área como em população. Abrange um terço das partes sólidas da superfície da Terra e é responsável por abrigar quase três quintos da população mundial.",
+      "bannerImgUrl": "https://source.unsplash.com/JqT2Wp5S0Dk",
+      "totalCountries": "51",
+      "totalLanguages": "2300",
+      "popularcities": "43",
+      "mostpopularcities": [
+        {
+          "city": "Hong Kong",
+          "country": "China",
+          "cityImage": "https://source.unsplash.com/4hluhoRJokI",
+          "countryCode": "HK"
+        },
+        {
+          "city": "Bangkok",
+          "country": "Thailândia",
+          "cityImage": "https://source.unsplash.com/Fd5w81zkgLE",
+          "countryCode": "TH"
+        },
+        {
+          "city": "Macau",
+          "country": "China",
+          "cityImage": "https://source.unsplash.com/ZDGz0rF1ioQ",
+          "countryCode": "CN"
+        },
+        {
+          "city": "Kuala Lumpur",
+          "country": "Malásia",
+          "cityImage": "https://source.unsplash.com/-9B08uduMyY",
+          "countryCode": "MY"
+        },
+        {
+          "city": "Dubai",
+          "country": "Emirados Árabes",
+          "cityImage": "https://source.unsplash.com/kZ1zThg6G40",
+          "countryCode": "AE"
+        }
+      ]
+    },
+    {
+      "id": "africa",
+      "name": "África",
+      "description": "A África é o terceiro continente mais extenso com cerca de 30 milhões de quilômetros quadrados, cobrindo 20,3% da área total da terra firme do planeta. É o segundo continente mais populoso da Terra com cerca de um bilhão de pessoas.",
+      "bannerImgUrl": "https://source.unsplash.com/kfxEUCTUeyg",
+      "totalCountries": "54",
+      "totalLanguages": "2000",
+      "popularcities": "4",
+      "mostpopularcities": [
+        {
+          "city": "Cairo",
+          "country": "Egito",
+          "cityImage": "https://source.unsplash.com/ONVA6s03hg8",
+          "countryCode": "EG"
+        },
+        {
+          "city": "Marrakech",
+          "country": "Marrocos",
+          "cityImage": "https://source.unsplash.com/aqJfoLKFz6c",
+          "countryCode": "MA"
+        },
+        {
+          "city": "Joanesburgo",
+          "country": "África do Sul",
+          "cityImage": "https://source.unsplash.com/xvJVDUoGpoU",
+          "countryCode": "ZA"
+        },
+        {
+          "city": "Hurghada",
+          "country": "Egito",
+          "cityImage": "https://source.unsplash.com/lPUdX9V6Pt0",
+          "countryCode": "EG"
+        }
+      ]
+    },
+    {
+      "id": "north-america",
+      "name": "América do Norte",
+      "description": "A América do Norte está localizada no extremo norte das Américas e é composta por apenas três países: Estados Unidos, Canadá e México, além de territórios de domínios europeus, como a Groelândia e Bermudas.",
+      "bannerImgUrl": "https://source.unsplash.com/1UN0YVHcIlU",
+      "totalCountries": "23",
+      "totalLanguages": "2000",
+      "popularcities": "10",
+      "mostpopularcities": [
+        {
+          "city": "Nova Iorque",
+          "country": "Estados Unidos",
+          "cityImage": "https://source.unsplash.com/TaCk3NspYe0",
+          "countryCode": "US"
+        },
+        {
+          "city": "Miami",
+          "country": "Estados Unidos",
+          "cityImage": "https://source.unsplash.com/pAWY7xrsLwc",
+          "countryCode": "US"
+        },
+        {
+          "city": "Los Angeles",
+          "country": "Estados Unidos",
+          "cityImage": "https://source.unsplash.com/xxzeV1aiSY8",
+          "countryCode": "US"
+        },
+        {
+          "city": "Cancún",
+          "country": "México",
+          "cityImage": "https://source.unsplash.com/_JxyHUYHk5A",
+          "countryCode": "MX"
+        },
+        {
+          "city": "Las Vegas",
+          "country": "Estados Unidos",
+          "cityImage": "https://source.unsplash.com/9xjdQ8-zLKI",
+          "countryCode": "US"
+        }
+      ]
+    },
+    {
+      "id": "south-america",
+      "name": "América do Sul",
+      "description": "A América do Sul é um continente que compreende a porção meridional da América. Também é considerada um subcontinente do continente americano. A sua extensão é de 17.819.100 km², abrangendo 12% da superfície terrestre e 6% da população mundial.",
+      "bannerImgUrl": "https://source.unsplash.com/n3vUEeeoZ68",
+      "totalCountries": "14",
+      "totalLanguages": "7",
+      "popularcities": "4",
+      "mostpopularcities": [
+        {
+          "city": "Rio de Janeiro",
+          "country": "Brasil",
+          "cityImage": "https://source.unsplash.com/TaCk3NspYe0",
+          "countryCode": "BR"
+        },
+        {
+          "city": "São Paulo",
+          "country": "Brasil",
+          "cityImage": "https://source.unsplash.com/pAWY7xrsLwc",
+          "countryCode": "BR"
+        },
+        {
+          "city": "Buenos Aires",
+          "country": "Argentina",
+          "cityImage": "https://source.unsplash.com/_yo28TDZFNo",
+          "countryCode": "AR"
+        },
+        {
+          "city": "Lima",
+          "country": "Perú",
+          "cityImage": "https://source.unsplash.com/4hMET7vYTAQ",
+          "countryCode": "PE"
+        }
+      ]
+    },
+    {
+      "id": "oceania",
+      "name": "Oceania",
+      "description": "A Oceania é o continente mais isolado do mundo, sua barreira geográfica fez com que fosse o último a ser descoberto pelos europeus. Em razão desse atraso em seu descobrimento ficou conhecido como mundo novo.",
+      "bannerImgUrl": "https://source.unsplash.com/7I6Hu7MjjYs",
+      "totalCountries": "14",
+      "totalLanguages": "18",
+      "popularcities": "3",
+      "mostpopularcities": [
+        {
+          "city": "Sydney",
+          "country": "Austrália",
+          "cityImage": "https://source.unsplash.com/KeDdztmEqVc",
+          "countryCode": "AU"
+        },
+        {
+          "city": "Melbourne",
+          "country": "Austrália",
+          "cityImage": "https://source.unsplash.com/01fDADro0PU",
+          "countryCode": "AU"
+        },
+        {
+          "city": "Auckland",
+          "country": "Austrália",
+          "cityImage": "https://source.unsplash.com/Sq2r8_XO3SQ",
+          "countryCode": "AU"
+        }
+      ]
+    }
+  ]
+}
