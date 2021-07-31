@@ -1,6 +1,8 @@
-import { Box, Flex, Heading, HStack, Icon, Text, Tooltip, VStack } from "@chakra-ui/react";
+import { Box, Flex, Heading, HStack, Icon, Image, SimpleGrid, Text, Tooltip, VStack } from "@chakra-ui/react";
 import { GetStaticProps, GetStaticPaths } from "next";
 import { GrCircleInformation } from "react-icons/gr"
+
+import ReactCountryFlag from "react-country-flag"
 
 import { api } from "../../services/api";
 
@@ -57,12 +59,12 @@ export default function Continent({ continent }: ContinentProps) {
         maxWidth={1440}
         width="100%"
         mx="auto"
+        pb="2rem"
         bg="brand.white-text"
         px="8.75rem"
         direction="column"
       >
         <Flex 
-          
           width="100%"
           mx="auto"
           mt="5rem"
@@ -80,7 +82,6 @@ export default function Continent({ continent }: ContinentProps) {
             align="center"
           >
             <HStack spacing="42px" align="center" justify="center">
-
               <VStack>
                 <Text 
                   fontSize="5xl" 
@@ -152,17 +153,85 @@ export default function Continent({ continent }: ContinentProps) {
                 </Text>
               </VStack>
             </HStack>
-
-
           </Flex>
-        
         </Flex>
+
         <Heading
           fontSize="2rem"
           fontWeight="medium"
+          mt="5rem"
         >
           Cidades +100
         </Heading> 
+
+        <SimpleGrid
+          width="100%"
+          mt="2.5rem"
+          minChildWidth="256px"
+          columnGap="40px"
+          rowGap="48px"
+          columns={[1, 4]} 
+        >
+          {continent.mostpopularcities.map((city, index) => (
+            <Box width="256px" key={index}>
+              <Image 
+                src={city.cityImage}
+                objectFit="cover"
+                width="256px"
+                height="173px"
+                borderRadius="sm"
+              />
+              <Flex 
+                width="100%"
+                height="106px"
+                borderX="2px solid"
+                borderBottom="2px solid"
+                borderColor="brand.yellow-op"
+                borderBottomRadius="4"
+              >
+                <Flex 
+                  px="1.5rem" 
+                  justify="space-between" 
+                  align="center"
+                  height="100%"
+                  width="100%"
+                >
+                  <Flex  
+                    direction="column" 
+                    height="100%"
+                    justify="space-between"
+                  >
+                    <Heading 
+                      pt="1.125rem"
+                      fontSize="xl" 
+                      fontWeight="semibold"
+                    >
+                      {city.city}
+                    </Heading>
+                    <Text 
+                      fontSize="md" 
+                      fontWeight="medium"
+                      color="brand.black-info"
+                      pb="25px"
+                    >
+                      {city.country}
+                    </Text>
+                  </Flex>
+                  <ReactCountryFlag 
+                    countryCode={city.countryCode}
+                    style={{
+                      fontSize: '2em',
+                      //lineHeight: '2em',
+                      borderRadius: '50%',
+                      objectFit: 'cover'
+                    }}
+                    svg
+                  />
+                </Flex>
+              </Flex>
+            </Box>
+          ))}
+        </SimpleGrid>
       </Flex>
     </>
   )

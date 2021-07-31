@@ -1,15 +1,10 @@
-import { Flex, Icon, Image, Link as ChakraLink, useBreakpointValue } from "@chakra-ui/react";
+import { Flex, Icon, Image, Link as ChakraLink } from "@chakra-ui/react";
 import { useRouter } from "next/dist/client/router";
 import Link from "next/link";
 import { IoIosArrowBack } from "react-icons/io"
 
 export function Header() {
   const path = useRouter()
-  
-  const isMobile = useBreakpointValue({
-    base: true,
-    lg: false
-  })
 
   if (path.asPath === '/') {
     return (

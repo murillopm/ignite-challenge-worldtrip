@@ -2,7 +2,12 @@ import { Flex, Image, Text, VStack } from "@chakra-ui/react";
 
 export function TravelTypes() {
   return (
-    <Flex justify="space-between" width="100%">
+    <Flex 
+      justify="space-between" 
+      width="100%" 
+      direction={["column", "row"]}
+      flexWrap="wrap"
+    >
       <VStack spacing="6" align="center">
         <Image src="/images/cocktail.svg" height="85px" width="85px"/>
         <Text fontSize="2xl" fontWeight="semibold" mt="6">vida noturna</Text>
