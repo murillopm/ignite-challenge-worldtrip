@@ -35,7 +35,7 @@ export default function Continent({ continent }: ContinentProps) {
         bgImg={continent.bannerImgUrl} 
         w="100%" 
         maxWidth={1440}
-        height={500}
+        height={[150, 250, 350, 450, 500]}
         bgPosition="center"
         bgRepeat="no-repeat"
         bgSize="cover"
@@ -61,39 +61,43 @@ export default function Continent({ continent }: ContinentProps) {
         mx="auto"
         pb="2rem"
         bg="brand.white-text"
-        px="8.75rem"
+        px={["0.5rem", "2rem", "3rem", "8.75rem"]}
         direction="column"
       >
         <Flex 
           width="100%"
           mx="auto"
-          mt="5rem"
+          mt={["1.5rem", "1.5rem", "2.5rem", "3.5rem", "5rem"]}
           justify="space-between"
+          direction={["column", "column", "column", "row"]}
         >
           <Text 
-            width="600px" 
+            width={["100%", "100%", "100%", "500px", "600px"]} 
             textAlign="justify" 
-            fontSize="2xl"
+            fontSize={["sm", "lg", "xl", "xl", "2xl"]}
           >
             {continent.description}
           </Text>
           <Flex
             as="span"
             align="center"
+            justify="center"
+            pl={["4", "10", "10", "10", "10", "20"]}
+            mt={["6", "6", "6", "0"]}
           >
             <HStack spacing="42px" align="center" justify="center">
               <VStack>
                 <Text 
-                  fontSize="5xl" 
+                  fontSize={["2xl", "3xl", "4xl", "4xl", "5xl"]}
                   color="brand.yellow" 
                   fontWeight="semibold"
                   textAlign="center"
-                  lineHeight="2.5rem"
+                  lineHeight={["2rem", "2.5rem"]}
                 >
                   {continent.totalCountries} <br/>
                 </Text>
                 <Text 
-                    fontSize="2xl" 
+                    fontSize={["lg", "lg", "2xl"]} 
                     color="brand.black-text" 
                     fontWeight="semibold"
                 >
@@ -103,18 +107,19 @@ export default function Continent({ continent }: ContinentProps) {
 
               <VStack>
                 <Text 
-                  fontSize="5xl" 
+                  fontSize={["2xl", "3xl", "4xl", "4xl", "5xl"]}
                   color="brand.yellow" 
                   fontWeight="semibold"
                   textAlign="center"
-                  lineHeight="2.5rem"
+                  lineHeight={["2rem", "2.5rem"]}
                 >
                   {continent.totalLanguages} <br/>
                 </Text>
                 <Text 
-                    fontSize="2xl" 
+                    fontSize={["lg", "lg", "2xl"]} 
                     color="brand.black-text" 
                     fontWeight="semibold"
+                    textAlign="center"
                 >
                   línguas
                 </Text>
@@ -122,18 +127,19 @@ export default function Continent({ continent }: ContinentProps) {
 
               <VStack>
                 <Text 
-                  fontSize="5xl" 
+                  fontSize={["2xl", "3xl", "4xl", "4xl", "5xl"]}
                   color="brand.yellow" 
                   fontWeight="semibold"
                   textAlign="center"
-                  lineHeight="2.5rem"
+                  lineHeight={["2rem", "2.5rem"]}
                 >
                   {continent.popularcities} <br/>
                 </Text>
                 <Text 
-                    fontSize="2xl" 
+                    fontSize={["lg", "lg", "2xl"]} 
                     color="brand.black-text" 
                     fontWeight="semibold"
+                    textAlign="center"
                 >
                   cidades +100 
                   <Tooltip 
@@ -157,9 +163,9 @@ export default function Continent({ continent }: ContinentProps) {
         </Flex>
 
         <Heading
-          fontSize="2rem"
+          fontSize={["1.5rem", "1.5rem", "2rem"]}
           fontWeight="medium"
-          mt="5rem"
+          mt={["2rem", "2.5rem", "3rem", "4rem", "5rem"]}
         >
           Cidades +100
         </Heading> 
@@ -173,7 +179,7 @@ export default function Continent({ continent }: ContinentProps) {
           columns={[1, 4]} 
         >
           {continent.mostpopularcities.map((city, index) => (
-            <Box width="256px" key={index}>
+            <Box width="256px" key={index} justifySelf="center">
               <Image 
                 src={city.cityImage}
                 objectFit="cover"
@@ -221,7 +227,6 @@ export default function Continent({ continent }: ContinentProps) {
                     countryCode={city.countryCode}
                     style={{
                       fontSize: '2em',
-                      //lineHeight: '2em',
                       borderRadius: '50%',
                       objectFit: 'cover'
                     }}

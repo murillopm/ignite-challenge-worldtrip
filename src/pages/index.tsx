@@ -1,4 +1,4 @@
-import { Box, Divider, Flex, Text } from "@chakra-ui/react";
+import { Box, Center, Divider, Flex, Text } from "@chakra-ui/react";
 
 import { Banner } from "../components/Banner";
 import { SwiperCarousel } from "../components/Swiper";
@@ -15,17 +15,44 @@ export default function Home() {
       bg="brand.white-text"
     >
       <Banner />
-      <Box mt="28" maxWidth={1160} width="100%" mx="auto" mb="20" px="3">
+      <Box 
+        maxWidth={1160} 
+        width="100%" 
+        mt={["9", "9", "28"]} 
+        mx="auto" 
+        mb={["9", "9", "20"]} 
+        px={["12", "12", "3"]}
+      >
         <TravelTypes />
       </Box>
-      <Box width="90px">
-        <Divider width="90px" border="2px" borderColor="brand.black-text"/>
-      </Box>
-      <Text mt="14" mb="3.25rem" fontWeight="medium" fontSize="2rem" textAlign="center">
+      <Center 
+        width={["60px", "90px", "120px"]}
+        height="1px"
+      >
+        <Divider 
+          width={["60px", "90px", "120px"]} 
+          border="1px"
+          borderColor="brand.black-text"
+        />
+      </Center>
+      <Text 
+        mt={["6", "8", "14"]} 
+        mb={["1.25rem", "2rem", "3.25rem"]} 
+        mx="auto"
+        fontWeight="medium" 
+        fontSize={["1.25rem", "1.25rem", "2rem"]} 
+        textAlign="center"
+      >
         Vamos nessa? <br />
         Então escolha seu continente
       </Text>
-      <Box maxWidth={1240} width="100%" mx="auto" mb="2.5rem">
+      <Box 
+        maxWidth={1240} 
+        height={["250px", "325px", "450px"]} 
+        width="100%" 
+        mx="auto" 
+        mb={["1.5rem", "2.5rem"]}
+      >
         <SwiperCarousel />
       </Box>
     </Flex>

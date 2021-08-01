@@ -13,7 +13,7 @@ export function SwiperCarousel() {
   return (
     <Swiper slidesPerView={1} loop={true} pagination={{
         "clickable": true
-      }} navigation={true} style={{ width: '100%', height: '450px' }}>
+      }} navigation={true} style={{ width: '100%', height: '100%' }}>
       <SwiperSlide>
         <CarouselItem 
           continent="Europa" 
@@ -27,7 +27,7 @@ export function SwiperCarousel() {
         <CarouselItem 
           continent="Ásia" 
           description="O continente mais populoso."
-          url="/images/europe.jpeg"
+          url="/images/asia.jpeg"
           slug="asia"
         />
       </SwiperSlide>
@@ -36,7 +36,7 @@ export function SwiperCarousel() {
         <CarouselItem 
           continent="África" 
           description="O continente mais diverso."
-          url="/images/europe.jpeg"
+          url="/images/africa.jpeg"
           slug="africa"
         />
       </SwiperSlide>
@@ -45,7 +45,7 @@ export function SwiperCarousel() {
         <CarouselItem 
           continent="América do Norte" 
           description="O continente mais tecnológico."
-          url="/images/europe.jpeg"
+          url="/images/north-america.jpeg"
           slug="north-america"
         />
       </SwiperSlide>
@@ -54,7 +54,7 @@ export function SwiperCarousel() {
         <CarouselItem 
           continent="América do Sul" 
           description="O continente mais bonito."
-          url="/images/europe.jpeg"
+          url="/images/south-america.jpeg"
           slug="south-america"
         />
       </SwiperSlide>
@@ -63,7 +63,7 @@ export function SwiperCarousel() {
         <CarouselItem 
           continent="Oceania" 
           description="O continente mais isolado."
-          url="/images/europe.jpeg"
+          url="/images/oceania.jpeg"
           slug="oceania"
         />
       </SwiperSlide>

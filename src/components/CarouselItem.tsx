@@ -10,7 +10,7 @@ interface CarouselItemProps {
 
 export function CarouselItem({ continent, description, url, slug }: CarouselItemProps) {
   return (
-    <Link href={`continents/${slug}`}>
+    <Link href={`/continents/${slug}`}>
       <a>
         <Flex
           height="100%"
@@ -23,8 +23,21 @@ export function CarouselItem({ continent, description, url, slug }: CarouselItem
           bgRepeat='no-repeat'
           bgSize='cover'
         >
-          <Text mb="4" fontWeight="bold" fontSize="5xl" color="brand.white-text">{continent}</Text>
-          <Text fontWeight="bold" fontSize="2xl" color="brand.white-text">{description}</Text>
+          <Text 
+            mb="4" 
+            fontWeight="bold" 
+            fontSize={["2xl", "3xl", "5xl" ]}
+            color="brand.white-text"
+          >
+            {continent}
+          </Text>
+          <Text 
+            fontWeight="bold" 
+            fontSize={["sm", "lg", "2xl"]} 
+            color="brand.white-text"
+          >
+            {description}
+          </Text>
         </Flex>
       </a>
     </Link>

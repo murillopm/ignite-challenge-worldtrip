@@ -9,15 +9,16 @@ export function Header() {
   if (path.asPath === '/') {
     return (
       <Flex 
+        as="header"   
         justify="center" 
         align="center" 
-        w="100%" py="7" 
-        as="header" 
+        w="100%" 
+        py={["4", "7"]} 
         bg="brand.white-text" 
         maxWidth={1440}
         mx="auto"
       >
-        <Image src="/images/logo.svg" height="12" width="44"/>
+        <Image src="/images/logo.svg" height={["5", "12"]} width={["20", "44"]}/>
       </Flex>
     )
   } else {
@@ -29,7 +30,7 @@ export function Header() {
         maxWidth={1440}
         w="100%" 
         mx="auto"
-        py="7" 
+        py={["4", "7"]} 
         bg="brand.white-text" 
         position="relative"
       >
@@ -38,7 +39,7 @@ export function Header() {
             <Icon as={IoIosArrowBack} height="28px" width="28px"/>
           </ChakraLink>
         </Link>
-        <Image src="/images/logo.svg" height="12" width="44"/>
+        <Image src="/images/logo.svg" height={["5", "10", "12"]} width={["20", "32", "44"]}/>
       </Flex>
     )
   }

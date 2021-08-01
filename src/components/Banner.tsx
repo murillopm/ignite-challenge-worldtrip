@@ -10,19 +10,23 @@ export function Banner() {
   return (
     <Box
       width="100%"
-      height={335}
+      height={[163, 250, 335]}
       bgImage="/images/background.png"
     >
       <Flex 
         justify="space-between"
-        px="36"
-        pt="20"
+        px={["4", "18", "36"]}
+        pt={["7", "9", "20"]}
       > 
         <Box width="32.75rem">
-          <Heading fontSize="4xl" color="brand.white-text" lineHeight="3.5rem">
+          <Heading 
+            fontSize={["xl", "3xl", "4xl"]} 
+            color="brand.white-text" 
+            lineHeight={["2rem", "3rem", "3.5rem"]}
+          >
             5 Continentes, <br/>infinitas possibilidades.
           </Heading>
-          <Text fontSize="lg" pt="5" color="brand.white-info">
+          <Text fontSize={["sm", "lg", "lg"]} pt={["2", "5", "5"]} color="brand.white-info">
             Chegou a hora de tirar do papel a viagem que você sempre sonhou. 
           </Text>
         </Box>
